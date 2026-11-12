@@ -70,7 +70,7 @@ import { request } from '@/api/client'
 type Row = Record<string, string | number | null>
 
 const ENDPOINT = '/api/log'
-const columns = ["日志编号", "关联任务", "开始时间", "结束时间", "采集行数", "成功条数", "失败条数", "错误信息"]
+const columns = ["日志编号", "关联任务", "关联源端", "轮次", "批次序号", "开始时间", "结束时间", "起始水位", "结束水位", "采集行数", "成功条数", "失败条数", "错误信息"]
 const actions = ["标记已读", "触发重试", "归档日志"]
 const statuses = ["成功", "部分失败", "完全失败"]
 const stats = [{"label": "执行日志总数", "value": 0}, {"label": "成功日志", "value": 0}, {"label": "失败日志", "value": 0}]
